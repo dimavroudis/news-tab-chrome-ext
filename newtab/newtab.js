@@ -62,7 +62,9 @@ function contentLoader(feed = "Όλα", init = true) {
       items: 1,
       margin: 10,
       dots: true,
-      callbacks: true
+      autoplay:true,
+      autoplayTimeout:8000,
+      autoplayHoverPause:true
     });
     $("#newsContent").css("opacity", "1");
     $("#loader").removeClass('open');
