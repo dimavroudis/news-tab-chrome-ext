@@ -23,7 +23,7 @@ function navigationLoader() {
 }
 
 // Makes the AJAX call to load the feed
-function contentLoader(feed = "Ελλάδα", init = true) {
+function contentLoader(feed = "Όλα", init = true) {
   var items = 0;
   feedLink= feeds[feed];
   $.ajax(feedLink, {
@@ -118,6 +118,7 @@ function fetchImage(articleLink, index) {
 }
 
 var feeds = {
+  "Όλα": "http://rss.in.gr/feed/news",
   "Ελλάδα": "http://rss.in.gr/feed/news/greece",
   "Οικονομία": "http://rss.in.gr/feed/news/economy",
   "Κόσμος": "http://rss.in.gr/feed/news/world",
